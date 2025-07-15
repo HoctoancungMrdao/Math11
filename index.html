@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đồng Hành Cùng Học Sinh</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f9f9f9; }
+
+    /* Thanh header */
+    .header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    .logo { font-weight: bold; font-size: 20px; color: #f26522; }
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .user-info img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+    .tagline {
+      background: #ff6600;
+      color: white;
+      text-align: center;
+      padding: 8px;
+      font-weight: bold;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #fff;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+      height: calc(100vh - 90px);
+      overflow-y: auto;
+    }
+    .sidebar h3 {
+      color: #f26522;
+      margin-bottom: 10px;
+    }
+    .sidebar a {
+      display: block;
+      margin-bottom: 8px;
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .card .hot {
+      display: inline-block;
+      background: red;
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+    .card h4 {
+      margin: 10px 0 5px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #444;
+    }
+    .card a {
+      color: #007bff;
+      font-size: 13px;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">Đồng Hành Cùng Học Sinh</div>
+    <div class="user-info">
+      <span style="font-weight:bold; color:#d00">Khóa Học Toán Thầy Bình</span>
+      <div>
+        <div>Ths Nguyễn Thanh Bình</div>
+        <div style="font-size: 12px; color: gray;">0878042368</div>
+      </div>
+      <img src="https://via.placeholder.com/32" alt="avatar">
+    </div>
+  </div>
+
+  <div class="tagline">Ôn tập Toán 12: Web đang quá trình cập nhật và chính sửa!
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <h3>ÔN TẬP THEO CHỦ ĐỀ</h3>
+      <a href="#">12 mới - test chương 1</a>
+      <a href="#">Cấp số cộng và nhân</a>
+      <a href="#">Đạo hàm & KS hàm số</a>
+      <a href="#">Luyện Đề</a>
+      <a href="#">Hình học không gian</a>
+      <a href="#">Tọa độ KG</a>
+      <a href="#">Thống kê</a>
+      <a href="#">Xác suất</a>
+      <h3>ÔN TẬP TỔNG HỢP</h3>
+      <a href="#">Ứng dụng đạo hàm</a>
+      <a href="#">Hình học tổng hợp</a>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <span class="hot">HOT</span>
+        <h4>Đề thi Toán – Đề số 1 – Ôn thi TN THPT</h4>
+        <p>Chủ đề: Luyện Đề</p>
+        <p>Bộ đề trắc nghiệm giúp học sinh ôn luyện kiến thức và kỹ năng giải Toán.</p>
+        <a href="#">Thích</a>
+        <a href="#">Chia sẻ</a>
+        <a href="#">Theo dõi trang</a>
+      </div>
+
+      <div class="card">
+        <span class="hot">HOT</span>
+        <h4>Đề thi Toán – Đề số 2 – Ôn thi TN THPT</h4>
+        <p>Chủ đề: Luyện Đề</p>
+        <p>Bộ đề trắc nghiệm giúp học sinh ôn luyện kiến thức và kỹ năng giải Toán.</p>
+        <a href="#">Thích</a>
+        <a href="#">Chia sẻ</a>
+        <a href="#">Theo dõi trang</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
